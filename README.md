@@ -64,31 +64,31 @@ Typical workflow (high level):
 
 The script accepts the following arguments:
 
-- `**dir`** (positional, optional)  
+- `dir` (positional, optional)  
   - Input directory containing images to analyze.  
   - **Default**: current directory (`.`).  
   - All images with typical extensions are processed.
-- `**--output`, `-o`**  
+- `--output`, `-o`  
   - Output directory for plots and results.  
   - **Default**: `output`.
-- `**--verbose`**  
+- `--verbose`  
   - Enables more detailed logging to the console.
-- `**--debug-plots**`  
+- `--debug-plots`  
   - Saves additional debug visualizations:
     - Auto-ROI detection debug image.
     - Edge overlay image for the detected edge.
-- `**--lpmm**`  
+- `--lpmm`  
   - Interprets MTF frequencies in **line pairs per millimeter (lp/mm)** instead of cycles per pixel.  
   - When enabled, the script asks you for the **pixel size in µm** for each image (with a configurable default).
-- `**--MTF50`**  
+- `--MTF50`  
   - Computes and annotates the **MTF50** (frequency where MTF falls to 50%) on the summary MTF plot.
-- `**--default-pixel`**  
+- `--default-pixel`  
   - Default pixel size in **micrometers (µm)** used when `--lpmm` is active and you accept the default per-image value.  
   - **Default**: `3.76`.
-- `**--manual-roi`**  
+- `--manual-roi`  
   - Disables auto-ROI.  
   - Opens an interactive window so you can manually draw/select the region of interest around the slanted edge for each image.
-- `**--esf-lsf-fwhm**`  
+- `--esf-lsf-fwhm`  
   - Generates an additional per-image PDF showing:
     - ESF (Edge Spread Function),
     - LSF (Line Spread Function),
