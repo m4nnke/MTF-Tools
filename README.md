@@ -2,6 +2,9 @@
 
 This repository contains a Python script for analyzing image sharpness using a **slanted edge MTF (Modulation Transfer Function)** method.
 
+![](example_img/output/mtf_summary.png)
+
+
 ### What the script does
 
 - **Loads an image** (e.g. a test chart with a slanted edge).
