@@ -1,6 +1,6 @@
 ## MTF Calculator – Slanted Edge Analysis
 
-This repository contains a Python script for analyzing image sharpness using a **slanted edge MTF (Modulation Transfer Function)** method. It is intended as a **practical lab reference tool**, not as a full compliance or certification implementation of any standard.
+This repository contains a Python script for analyzing image sharpness using a **slanted edge MTF (Modulation Transfer Function)** method.
 
 ### What the script does
 
@@ -19,7 +19,9 @@ The implementation is inspired by common **ISO-style slanted edge methods** (suc
 
 1. **Python version**
   - Use a relatively recent **Python 3.x** (e.g. 3.9+ recommended).
-2. **Install dependencies**
+2. **Clone Repository**
+  - Or download the script and requirements files from GitHub manually.
+3. **Install dependencies**
   - From the repository root, run:
 
 ```bash
@@ -93,26 +95,4 @@ The script accepts the following arguments:
     - ESF (Edge Spread Function),
     - LSF (Line Spread Function),
     - The **FWHM** (Full Width at Half Maximum) if it can be estimated.
-
-### Notes and limitations
-
-- **Standard method, but not a standard reference**  
-  - The approach follows a **standard slanted edge method inspired by ISO-style procedures**.  
-  - Implementation details and simplifications mean this script **does not replace a fully validated ISO 12233 tool**.
-- **Intended use**  
-  - **Great for**: development work, relative lens/system comparisons, lab experimentation.  
-  - **Not intended for**: official certification, contractual image quality guarantees, or regulatory submissions.
-- **Accuracy considerations**  
-  - Results will depend on:
-    - Input image quality (noise, exposure, chart quality).
-    - Correct edge selection and orientation.
-    - Sampling, interpolation, and processing parameters inside the script.
-
-### Getting help or extending the script
-
-- If you are familiar with Python and image processing, you can:
-  - Adapt the slanted edge workflow (e.g. different frequency units, binning, or windowing).
-  - Integrate the script into a larger lab pipeline.
-  - Add your own plotting or reporting.
-
-Since the script aims to stay **practical rather than “standard-perfect”**, feel free to tailor it to your specific lab setup and image quality questions.
+  
